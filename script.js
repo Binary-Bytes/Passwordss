@@ -14,7 +14,7 @@ const deleteBTN = document.getElementById("delete");
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
-const symbols = "!@#$%^&*()_+=";
+const symbols = "!@#&()_+=";
 
 function getPass(name) {
     var pass = window.localStorage.getItem(name.toString());

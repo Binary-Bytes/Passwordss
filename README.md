@@ -1,6 +1,6 @@
 # Passwordss
 
-Website : https://passwordss.herokuapp.com/<br />
+Website : https://binary-bytes.github.io/Passwordss<br />
 Easily Generate, Manage and Store Your Passwords Safely and Securely
 
 1. Generate A Password
