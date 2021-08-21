@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Easily Generate, Manage and Store Your Passwords Safely and Securely" />
+
+    <title>Passwordss</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="pw-container one">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="password">Search Password</span>
+                <button id="copyPw">Copy</button>
+            </div>
+        </div>
+        <div class="pw-header">
+            <input id="name" class="pw-name" placeholder="Enter Password Name" />
+        </div>
+        <div class="pw-body">
+            <button class="generate" id="searchPw">
+                Search Password
+            </button>
+        </div>
+    </div>
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pw">Password</span>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+        <div class="pw-header">
+            <input id="pwName" class="pw-name" placeholder="Enter Password Name" />
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="len">Password Length</label>
+                <input id="len" class="len" value="10" min="4" max="15" onchange="change()" />
+            </div>
+            <div class="form-control">
+                <label for="upper">Contain Uppercase Letters</label>
+                <input id="upper" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input id="lower" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="number">Contain Numbers</label>
+                <input id="number" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="symbol">Contain Symbols</label>
+                <input id="symbol" type="checkbox" />
+            </div>
+            <button class="generate" id="generate">
+                Generate Password
+            </button>
+            <button class="save-pw" id="savePw">
+                Save Password
+            </button>
+        </div>
+    </div>
+    <div class="pw-container two">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pwStatus">Delete Password</span>
+            </div>
+        </div>
+        <div class="pw-header">
+            <input id="deletePw" class="pw-name" placeholder="Enter Password Name" />
+        </div>
+        <div class="pw-body">
+            <button class="generate" id="delete">
+                Delete
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
